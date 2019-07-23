@@ -139,7 +139,7 @@
                 remove_empty_properties: false,
                 // The schema for the editor
                 schema: {
-                    title: "Item",
+                    title: "I",
                     $ref: "#/definitions/item",
                     definitions: {
                         item: {
@@ -154,7 +154,10 @@
                                 "List"
                             ],
                             properties: {
-                                id: {"$ref": "#/definitions/id"},
+                                id: {
+                                    title: "ID",
+                                    type: "string"
+                                },
                                 tag: {
                                     title: "Tag",
                                     type: "string"
