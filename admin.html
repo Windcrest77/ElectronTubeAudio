@@ -144,7 +144,7 @@
                     definitions: {
                         item: {
                             type: "object",
-                            id: 1,
+                            id: {"$ref": "#/definitions/id"},
                             defaultProperties: [
                                 "tag",
                                 "id",
@@ -155,7 +155,7 @@
                             ],
                             required: ["id", "tag"],
                             properties: {
-                                id: {"$ref": "#/definitions/id"},
+                                id: null,
                                 tag: {
                                     title: "Tag",
                                     type: "string"
