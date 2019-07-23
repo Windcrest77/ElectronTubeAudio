@@ -18,9 +18,8 @@
 
     <ul class="nav nav-tabs" style="width:100%; background-color:whitesmoke; border-top: 2px solid #31708f;  border-left: 2px solid #31708f;  border-right: 2px solid #31708f; padding-top: 5px; padding-left: 10px; padding-right: 10px;" onclick="scrollToTopLeft(); closeSliders();">
         {{#each List}}
-            <li title="." style="border-bottom-width: 0px; padding-top: 1px;">
-                <a data-toggle="tab" id="toptabFCAP" href="#tabFCAP">
-                    <span class="fa fa-clipboard-list"></span>&nbsp;
+            <li title="" style="border-bottom-width: 0px; padding-top: 1px;">
+                <a data-toggle="tab" href="#tab{{this.tag}}">
                     <b>
                         {{this.tag}}
                     </b>
@@ -32,11 +31,8 @@
 
     </nav>
     
-        <div class="entry">
-            <ul>
+        <div style="margin-top:60px;">
               {{#each List}}
-                <li>
-                    {{this.tag}}
                     <ul>
                       {{#each this.List}}
                         <li>
@@ -72,9 +68,7 @@
                         </li>
                       {{/each}}
                     </ul>
-                </li>
               {{/each}}
-            </ul>
         </div>
     </script>
     
