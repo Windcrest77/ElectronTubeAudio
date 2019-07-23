@@ -144,7 +144,7 @@
                     definitions: {
                         item: {
                             type: "object",
-                            id: "item",
+                            id: 1,
                             defaultProperties: [
                                 "tag",
                                 "id",
@@ -155,10 +155,7 @@
                             ],
                             required: ["id", "tag"],
                             properties: {
-                                id: {
-                                    title: "ID",
-                                    type: "string"
-                                },
+                                id: {"$ref": "#/definitions/id"},
                                 tag: {
                                     title: "Tag",
                                     type: "string"
@@ -184,6 +181,11 @@
                                     }
                                 }
                             }
+                        },
+                        id: {
+                            "type": "integer",
+                            "minimum": 1,
+                            "readOnly": true
                         }
                     }
                 }
