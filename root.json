@@ -67,7 +67,43 @@
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
-			"List": []
+			"List": [
+				{
+					"tag": "Suppliers",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				},
+				{
+					"tag": "Tubes",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				},
+				{
+					"tag": "Transformers",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				},
+				{
+					"tag": "Passive Components",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				},
+				{
+					"tag": "Fabrication",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				}
+			]
 		},
 		{
 			"tag": "Build",
