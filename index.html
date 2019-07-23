@@ -23,6 +23,7 @@
     
     <script>
         function init() {
+            alert(root)
             let template = document.getElementById("entry-template").innerHTML;
             let html = Handlebars.compile(template)(root);
             document.getElementsByTagName("body")[0].innerHTML = html;
