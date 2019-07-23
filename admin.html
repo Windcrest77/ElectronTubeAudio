@@ -135,6 +135,7 @@
                 disable_properties: true,
                 disable_edit_json: true,
                 disable_array_delete_all_rows: true,
+                no_additional_properties: true,
                 // The schema for the editor
                 schema: {
                     title: "Item",
@@ -154,11 +155,13 @@
                             properties: {
                                 id: {
                                     title: "ID",
-                                    type: "string"
+                                    type: "string",
+                                    required: true
                                 },
                                 tag: {
                                     title: "Tag",
-                                    type: "string"
+                                    type: "string",
+                                    required: true
                                 },
                                 linkurl: {
                                     title: "Link URL",
