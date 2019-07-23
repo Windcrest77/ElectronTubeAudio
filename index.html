@@ -16,7 +16,16 @@
         <div class="entry">
             <ul>
               {{#each List}}
-                <li>{{this.tag}}</li>
+                <li>
+                    {{this.tag}}
+                    <ul>
+                      {{#each this.List}}
+                        <li>
+                            {{this.tag}}
+                        </li>
+                      {{/each}}
+                    </ul>
+                </li>
               {{/each}}
             </ul>
         </div>
