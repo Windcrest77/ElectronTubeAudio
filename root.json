@@ -1,11 +1,13 @@
 {
 	"tag": "Root",
+	"id": "Root",
 	"linkurl": "",
 	"jsonurl": "",
 	"description": "",
 	"List": [
 		{
 			"tag": "Home",
+			"id": "Home",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
@@ -13,6 +15,7 @@
 		},
 		{
 			"tag": "Learn",
+			"id": "Learn",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
@@ -20,12 +23,14 @@
 		},
 		{
 			"tag": "Research",
+			"id": "Research",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
 			"List": [
 				{
 					"tag": "Tube Data Sheets",
+					"id": "Sheets",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -33,12 +38,14 @@
 				},
 				{
 					"tag": "Schematics",
+					"id": "Schematics",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
 					"List": [
 						{
 							"tag": "Single Ended",
+							"id": "SE",
 							"linkurl": "",
 							"jsonurl": "",
 							"description": "",
@@ -46,6 +53,7 @@
 						},
 						{
 							"tag": "Push Pull",
+							"id": "PP",
 							"linkurl": "",
 							"jsonurl": "",
 							"description": "",
@@ -55,6 +63,7 @@
 				},
 				{
 					"tag": "Books",
+					"id": "Books",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -64,12 +73,14 @@
 		},
 		{
 			"tag": "Parts",
+			"id": "Parts",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
 			"List": [
 				{
 					"tag": "Suppliers",
+					"id": "Suppliers",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -77,6 +88,7 @@
 				},
 				{
 					"tag": "Tubes",
+					"id": "Tubes",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -84,6 +96,7 @@
 				},
 				{
 					"tag": "Transformers",
+					"id": "Transformers",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -91,6 +104,7 @@
 				},
 				{
 					"tag": "Passive Components",
+					"id": "Components",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -98,6 +112,7 @@
 				},
 				{
 					"tag": "Fabrication",
+					"id": "Fabrication",
 					"linkurl": "",
 					"jsonurl": "",
 					"description": "",
@@ -107,6 +122,7 @@
 		},
 		{
 			"tag": "Build",
+			"id": "Build",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
@@ -114,6 +130,7 @@
 		},
 		{
 			"tag": "Loudspeakers",
+			"id": "Loudspeakers",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
@@ -121,6 +138,7 @@
 		},
 		{
 			"tag": "Forums",
+			"id": "Forums",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
@@ -128,6 +146,7 @@
 		},
 		{
 			"tag": "Commercial",
+			"id": "Commercial",
 			"linkurl": "",
 			"jsonurl": "",
 			"description": "",
