@@ -136,6 +136,7 @@
                 disable_edit_json: true,
                 disable_array_delete_all_rows: true,
                 no_additional_properties: true,
+                remove_empty_properties: false,
                 // The schema for the editor
                 schema: {
                     title: "Item",
@@ -153,15 +154,10 @@
                                 "List"
                             ],
                             properties: {
-                                id: {
-                                    title: "ID",
-                                    type: "string",
-                                    required: true
-                                },
+                                id: {"$ref": "#/definitions/id"},
                                 tag: {
                                     title: "Tag",
-                                    type: "string",
-                                    required: true
+                                    type: "string"
                                 },
                                 linkurl: {
                                     title: "Link URL",
