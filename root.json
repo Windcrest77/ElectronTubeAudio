@@ -1,64 +1,101 @@
 {
-  "tag": "Root",
-  "linkurl": "",
-  "jsonurl": "",
-  "description": "",
-  "List": [
-    {
-      "tag": "Home",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Learn",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Research",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Parts",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Build",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Loudspeakers",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Forums",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    },
-    {
-      "tag": "Commercial",
-      "linkurl": "",
-      "jsonurl": "",
-      "description": "",
-      "List": []
-    }
-  ]
+	"tag": "Root",
+	"linkurl": "",
+	"jsonurl": "",
+	"description": "",
+	"List": [
+		{
+			"tag": "Home",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Learn",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Research",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": [
+				{
+					"tag": "Tube Data Sheets",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				},
+				{
+					"tag": "Schematics",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": [
+						{
+							"tag": "Single Ended",
+							"linkurl": "",
+							"jsonurl": "",
+							"description": "",
+							"List": []
+						},
+						{
+							"tag": "Push Pull",
+							"linkurl": "",
+							"jsonurl": "",
+							"description": "",
+							"List": []
+						}
+					]
+				},
+				{
+					"tag": "Books",
+					"linkurl": "",
+					"jsonurl": "",
+					"description": "",
+					"List": []
+				}
+			]
+		},
+		{
+			"tag": "Parts",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Build",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Loudspeakers",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Forums",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		},
+		{
+			"tag": "Commercial",
+			"linkurl": "",
+			"jsonurl": "",
+			"description": "",
+			"List": []
+		}
+	]
 }
