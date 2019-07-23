@@ -3,7 +3,7 @@
     
 <head>
     <meta charset="utf-8" />
-    <title>Rick</title>
+    <title>ElectronTubeAudio</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.js"></script>
@@ -14,18 +14,20 @@
     
     <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
-            <h1>{{tag}}</h1>
-            <div>
-                {{body}}
-            </div>
+            <ul>
+              {{#each List}}
+                <li>{{this.tag}}</li>
+              {{/each}}
+            </ul>
         </div>
     </script>
     
     <script>
         function init() {
             alert(root)
-            let template = document.getElementById("entry-template").innerHTML;
-            let html = Handlebars.compile(template)(root);
+            let source = document.getElementById("entry-template").innerHTML;
+            let template = Handlebars.compile(source);
+            let html = template(root);
             document.getElementsByTagName("body")[0].innerHTML = html;
         }
     </script>
