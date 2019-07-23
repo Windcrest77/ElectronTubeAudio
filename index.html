@@ -11,25 +11,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
     
     <script src="root.json"></script>
+
+    <style>
+        .navbar-nav > li > a {
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+
+        .navbar {
+            min-height: 32px !important;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: black;
+            color: white;
+        }
+
+        ul.nav-tabs {border-color:white;}
+
+        .nav-tabs>li>a {
+            background-color: white; 
+            color: black;
+            border-color:lightgrey;
+            border-bottom-width: 0px;
+        }
+
+        /* active tab color */
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+            background-color: #d9edf7; 
+            color: #31708f;
+            border-color:lightgrey;
+            border-bottom-width: 0px;
+        }
+
+        /* hover tab color */
+        .nav-tabs>li>a:hover {
+            background-color:dimgrey;
+            color: white;
+            border-color:lightgrey;
+            border-bottom-width: 0px;
+        }
+    </style>
     
     <script id="entry-template" type="text/x-handlebars-template">
-    
-    <nav class="navbar navbar-fixed-top" id="topNav" style="margin: 0; padding-left: 20px; padding-top: 4px; padding-right: 20px;">
 
-    <ul class="nav nav-tabs" style="width:100%; background-color:whitesmoke; border-top: 2px solid #31708f;  border-left: 2px solid #31708f;  border-right: 2px solid #31708f; padding-top: 5px; padding-left: 10px; padding-right: 10px;" onclick="scrollToTopLeft(); closeSliders();">
-        {{#each List}}
-            <li title="" style="border-bottom-width: 0px; padding-top: 1px;">
-                <a data-toggle="tab" href="#tab{{this.tag}}">
-                    <b>
-                        {{this.tag}}
-                    </b>
-                </a>
-            </li>
-        {{/each}}
-
-    </ul>
-
-    </nav>
+        <nav class="navbar navbar-fixed-top" id="topNav" style="margin: 0; padding-left: 20px; padding-top: 4px; padding-right: 20px;">
+            <ul class="nav nav-tabs" style="width:100%; background-color:whitesmoke; border-top: 2px solid #31708f;  border-left: 2px solid #31708f;  border-right: 2px solid #31708f; padding-top: 5px; padding-left: 10px; padding-right: 10px;" onclick="scrollToTopLeft(); closeSliders();">
+                {{#each List}}
+                    <li title="" style="border-bottom-width: 0px; padding-top: 1px;">
+                        <a data-toggle="tab" href="#tab{{this.tag}}">
+                            <b>
+                                {{this.tag}}
+                            </b>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+        </nav>
+        
+        <div class="tab-content" style="margin-top:60px;">
+            {{#each List}}
+                <div id="tab{{this.tag}}" class="tab-pane">
+                    {{this.tag}}
+                </div>
+            {{/each}}
+        </div>
     
         <div style="margin-top:60px;">
             <ul>
