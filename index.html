@@ -32,7 +32,12 @@
     </nav>
     
         <div style="margin-top:60px;">
+            <ul>
               {{#each List}}
+                <li>
+                    <b>
+                        {{this.tag}}
+                    </b>
                     <ul>
                       {{#each this.List}}
                         <li>
@@ -68,7 +73,9 @@
                         </li>
                       {{/each}}
                     </ul>
+                </li>
               {{/each}}
+          </ul>
         </div>
     </script>
     
