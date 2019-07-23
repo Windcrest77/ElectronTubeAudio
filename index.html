@@ -23,13 +23,43 @@
     </script>
     
     <script>
-        function init() {
-            alert(root)
-            let source = document.getElementById("entry-template").innerHTML;
-            let template = Handlebars.compile(source);
-            let html = template(root);
-            document.getElementsByTagName("body")[0].innerHTML = html;
-        }
+        $(document).ready(function () {
+            
+            var root = null;
+            
+            function ajaxRead(fileName) {
+                $.ajax({
+                    type: 'GET',
+                    url: fileName + '.json',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    crossDomain: true,
+                    async: true,
+                    cache: false,
+                    timeout: 45000,
+                    processData: false,
+                    success: function (data, status, xhr) {
+                        root = data
+                        init()
+                    },
+                    complete: function (xhr, status) {
+                    },
+                    error: function (xhr, status, error) {
+                        alert(xhr.responseText)
+                    }
+                })
+                return null
+            }
+            
+            function init() {
+                let source = document.getElementById("entry-template").innerHTML;
+                let template = Handlebars.compile(source);
+                let html = template(root);
+                document.getElementsByTagName("body")[0].innerHTML = html;
+            }
+            
+            ajaxRead('root')
+        });
     </script>
 
 </head>
